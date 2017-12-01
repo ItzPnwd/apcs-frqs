@@ -39,5 +39,4 @@ public class College
     {
         tuition = newTuition;
     }
-    
 }

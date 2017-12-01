@@ -22,6 +22,34 @@ public class Tester
         
         CollegeGroup group = new CollegeGroup(allColleges);
         
+        //Will be testing the functions through loops :D
+            
+        //Current testing method
+        
+        System.out.println(c1.getName() + ", " + c1.getRegion() + ", " + c1.getTuition());
+        System.out.println(c2.getName() + ", " + c2.getRegion() + ", " + c2.getTuition());
+        System.out.println(c3.getName() + ", " + c3.getRegion() + ", " + c3.getTuition());
+        System.out.println(c4.getName() + ", " + c4.getRegion() + ", " + c4.getTuition());
+        System.out.println(c5.getName() + ", " + c5.getRegion() + ", " + c5.getTuition());
+        System.out.println(c6.getName() + ", " + c6.getRegion() + ", " + c6.getTuition());
+        System.out.println(c7.getName() + ", " + c7.getRegion() + ", " + c7.getTuition());
+        
+        //Testing the setTuition and then redoing the get tuition to prove
+        c1.setTuition(1000);
+        c2.setTuition(2000);
+        c3.setTuition(3000);
+        c4.setTuition(4000);
+        c5.setTuition(5000);
+        c6.setTuition(6000);
+        c7.setTuition(7000);
+        
+        System.out.println(c1.getTuition());
+        System.out.println(c2.getTuition());
+        System.out.println(c3.getTuition());
+        System.out.println(c4.getTuition());
+        System.out.println(c5.getTuition());
+        System.out.println(c6.getTuition());
+        System.out.println(c7.getTuition());
+        
     }
-    
 }

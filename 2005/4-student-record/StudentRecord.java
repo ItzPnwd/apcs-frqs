@@ -7,7 +7,15 @@
  */
 public class StudentRecord
 {
-    private int[] scores;
+    //fields
+    private int[] scores; //contains scores.length values
+                          //scores.length > 1
+                          
+    //Constructor(s)
+    public StudentRecord(int[] records)
+    {
+        this.scores = records;
+    }
     
     private double average(int first, int last)
      {
