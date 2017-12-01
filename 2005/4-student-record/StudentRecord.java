@@ -17,7 +17,13 @@ public class StudentRecord
         this.scores = records;
     }
     
-    private double average(int first, int last)
+    //Methods
+    /**
+     * @return the average (arithmetic means) of the values in scores
+     * whose subscripts are between first and last, inclusive
+     * precondition: 0 <= first <= last < scores.length
+     */
+        private double average(int first, int last)
      {
          int sum = 0;
          for (int i = first; i <= last; i++)
@@ -27,6 +33,12 @@ public class StudentRecord
          return sum/scores.length;
      }
     
+    /**
+     * @return true if each successive value in scores is greater
+     * than or equal to the previous value;
+     * otherwise, returns false
+     * 
+     */
     private boolean hasImproved()
     {
         for(int i = 0; i < scores.length - 1; i++)
@@ -39,6 +51,12 @@ public class StudentRecord
         return true;
     }
     
+    /**
+     * if the values in scores have improved,
+     * @return the average of the elements in scores with indexes greater than or equal
+     * to scores.length/2;
+     * otherwise, returns the average of all of the values in scores
+     */
     public double finalAverage()
     {
         int first = 0;
