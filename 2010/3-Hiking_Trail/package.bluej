@@ -2,9 +2,9 @@
 dependency1.from=Test
 dependency1.to=Trail
 dependency1.type=UsesDependency
-editor.fx.0.height=1047
-editor.fx.0.width=1023
-editor.fx.0.x=-7
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
 editor.fx.0.y=0
 objectbench.height=93
 objectbench.width=760
