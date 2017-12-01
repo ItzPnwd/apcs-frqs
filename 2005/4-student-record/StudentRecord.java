@@ -23,14 +23,15 @@ public class StudentRecord
      * whose subscripts are between first and last, inclusive
      * precondition: 0 <= first <= last < scores.length
      */
+    //Tested 12/1/17 ~ Working
         private double average(int first, int last)
      {
-         int sum = 0;
+         double sum = 0;
          for (int i = first; i <= last; i++)
          {
-             sum = scores[i] + scores[i+1];
+             sum += scores[i];
          }
-         return sum/scores.length;
+         return sum/((last - first) + 1);
      }
     
     /**
@@ -39,7 +40,8 @@ public class StudentRecord
      * otherwise, returns false
      * 
      */
-    private boolean hasImproved()
+    //Tested 12/1/17 ~ Working
+    public boolean hasImproved()
     {
         for(int i = 0; i < scores.length - 1; i++)
         {
@@ -57,6 +59,7 @@ public class StudentRecord
      * to scores.length/2;
      * otherwise, returns the average of all of the values in scores
      */
+    //Tested 12/1/17 ~ Working
     public double finalAverage()
     {
         int first = 0;

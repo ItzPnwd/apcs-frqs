@@ -9,14 +9,16 @@ public class Tester
 {
     public static void main(String[] args)
     {
-        StudentRecord a1 = new StudentRecord(50);
-        StudentRecord a2 = new StudentRecord(50);
-        StudentRecord a3 = new StudentRecord(20);
-        StudentRecord a4 = new StudentRecord(80);
-        StudentRecord a5 = new StudentRecord(53);
+        int[] r1 = {50, 50, 20, 80, 53};
+        int[] r2 = {20, 50, 50, 53, 80};
+        int[] r3 = {20, 50, 50, 80};
         
-        StudentRecord[] allGrades = {a1, a2, a3, a4, a5};
+        StudentRecord a1 = new StudentRecord(r1);
+        StudentRecord a2 = new StudentRecord(r2);
+        StudentRecord a3 = new StudentRecord(r3);
         
-        StudentRecord group = new StudentRecord(allGrades);
+        System.out.println(a1.finalAverage());
+        System.out.println(a2.finalAverage());
+        System.out.println(a3.finalAverage());
     }
 }
