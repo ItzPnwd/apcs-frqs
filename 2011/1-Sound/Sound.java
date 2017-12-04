@@ -7,44 +7,61 @@
  */
 public class Sound
 {
+    //Fields
     private int[] samples;
     
+    //Constructor(s)
+    public Sound(int[] samples)
+    {
+        this.samples = samples;
+    }
+    
+    //Methods
     public int limitAmplitude(int limit)
     {
         int nLimit = -1 * limit;
-        int len = samples.length;
-        
-        for(int i = samples[0]; i == samples[len - 1]; i++)
+        int changed =0;
+        for(int i = samples[0]; i <= samples.length; i++)
         {
-            if(samples[i] >= limit)
+            if(limit >= 0)
             {
-                samples[i] = limit;
-            }
-            if(samples[i] <= nLimit)
-            {
-                samples[i] = nLimit;
+                if(samples[i] >= limit)
+                {
+                    samples[i] = limit;
+                    changed++;
+                }
+                if(samples[i] <= nLimit)
+                {
+                    samples[i] = nLimit;
+                    changed++;
+                }
             }
         }
+        return changed;
     }
     
     public void trimSilenceFromBeginning()
     {
-        for(int i = samples[0]; i <= samples[len]; i++)
-        {
-            int counter = 0;
-            
-            if(samples[i] == 0)
-            {
-                counter += 1;
-            }
-            else
-            {
-                return counter;
-            }
+        int counter = 0;
+        int q = 0;
+        while(samples[q] == 0)
+        {   
+           counter++;
+           q++;
         }
         
-        pirvate int[] finished;
-        finished[] = samples[counter];
-        return finished;
+        int newLength = samples.length - counter;
+        int[] finished = new int [newLength];
+        
+        for(int i = counter; i < newLength; i++)
+        {
+            finished[i] = samples[i];
+        }
+        
+        samples=finished;
+    }
+    
+    public int[] getSamples() {
+        return samples;
     }
 }
