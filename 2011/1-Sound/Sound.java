@@ -63,5 +63,5 @@ public class Sound
     
     public int[] getSamples() {
         return samples;
-    }
+    }    
 }
