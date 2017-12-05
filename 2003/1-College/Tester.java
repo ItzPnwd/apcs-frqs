@@ -34,6 +34,16 @@ public class Tester
         System.out.println(c6.getName() + ", " + c6.getRegion() + ", " + c6.getTuition());
         System.out.println(c7.getName() + ", " + c7.getRegion() + ", " + c7.getTuition());
         
+        group.updateTuition("Duke University", 49421);
+        System.out.println(c2.getName() + ", " + c2.getRegion() + ", " + c2.getTuition());
+        
+        College[] list = group.getCollegeList("Northeast", 2000, 27500);
+        
+        for (College c: list) {
+            System.out.println(c);
+        }
+        
+        
         //Testing the setTuition and then redoing the get tuition to prove
         c1.setTuition(1000);
         c2.setTuition(2000);

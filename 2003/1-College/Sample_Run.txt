@@ -5,6 +5,8 @@ Stanford University, West, 25917
 Florida International University, Southeast, 10800
 Dartmouth College, Northeast, 27764
 Spelman College, Southeast, 11455
+Duke University, Southeast, 49421
+College [Colgate University, Northeast, 27025]
 1000
 2000
 3000

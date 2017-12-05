@@ -39,4 +39,9 @@ public class College
     {
         tuition = newTuition;
     }
+    
+    public String toString() {
+        return "College [" + name + ", " + region + ", " + tuition + "]";
+    }
+    
 }
