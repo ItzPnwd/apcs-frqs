@@ -14,7 +14,10 @@ public class CollegeGroup
     {
         this.myColleges = myColleges;
     }
+    //Methods
     
+    /**The tuition for collegeName is changed to newTuition
+     */
     public void updateTuition(String collegeName, int newTuition)
     {
         for(int i = 0; i < myColleges.length; i++)
@@ -29,6 +32,10 @@ public class CollegeGroup
         }
     }
     
+    /**the length of the array returned is equal to the number of colleges
+     * that meet the criteria.
+     * @return an array of Colleges in region where low <= tuition <= high
+     */
     public College[] getCollegeList(String region, int low, int high)
     {
         int counter = 0;

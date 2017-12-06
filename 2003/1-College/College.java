@@ -20,21 +20,25 @@ public class College
         this.tuition = tuition;
     }
     
+    //returns college name
     public String getName()
     {
         return name;
     }
     
+    //returns college region
     public String getRegion()
     {
         return region;
     }
     
+    //returns college tuition
     public int getTuition()
     {
         return tuition;
     }
     
+    //sets college's tuition to newTuition
     public void setTuition(int newTuition)
     {
         tuition = newTuition;
@@ -43,5 +47,4 @@ public class College
     public String toString() {
         return "College [" + name + ", " + region + ", " + tuition + "]";
     }
-    
 }
