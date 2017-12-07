@@ -41,11 +41,8 @@ public class Trail
             {
              maximum = markers[i];
             }
-        }
-         
-        for(int i = start; i < markers.length; i++)
-        {
-            if(markers[i] > maximum)
+            
+            if(markers[i] < minimum)
             {
                 minimum = markers[i];
             }
