@@ -2,8 +2,8 @@
 /**k
  * Write a description of class HiddenWord here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version IP:12/12/17
  */
 public class HiddenWord
 {
