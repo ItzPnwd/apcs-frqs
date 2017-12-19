@@ -14,12 +14,20 @@ public class SelfDivisor
      */
     public static boolean isSelfDivisor(int number)
     {
-        if(number > 0)
+        int temp = number;
+        while(temp > 0)
         {
-            if()
+            temp = number % 10;
+            if(number % temp != 0)
             {
+                return false;
+            }
+            else
+            {
+                temp /= 10;
             }
         }
+        return true;
     }
     
     /** @param start starting point for values to be checked
@@ -31,14 +39,16 @@ public class SelfDivisor
     public static int[] firstNumSelfDivisors(int start, int num)
     {
         int [] included = new int[num];
-        
-        for(int i = start; i < included.length; i++)
+        int j = 0;
+        for(int i = start; i == included.length; i++)
         {
-            if(i.isSelfDivisor == true)
+            if(isSelfDivisor(i) == true)
             {
-                included[i] = included;
+                included[j] = i;
+                j++;
             }
         }
         return included;
     }
+    
 }
