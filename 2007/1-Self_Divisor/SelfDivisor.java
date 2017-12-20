@@ -15,18 +15,19 @@ public class SelfDivisor
     public static boolean isSelfDivisor(int number)
     {
         int temp = number;
+        
         while(temp > 0)
         {
-            temp = number % 10;
-            if(number % temp != 0)
+            int digit = temp % 10;
+            
+            if(digit == 0 || number % digit != 0)
             {
                 return false;
             }
-            else
-            {
-                temp /= 10;
-            }
+            
+            temp /= 10;
         }
+        
         return true;
     }
     
@@ -40,14 +41,17 @@ public class SelfDivisor
     {
         int [] included = new int[num];
         int j = 0;
-        for(int i = start; i == included.length; i++)
+        
+        while(j < num)
         {
-            if(isSelfDivisor(i) == true)
+            if(isSelfDivisor(start) == true)
             {
-                included[j] = i;
+                included[j] = start;
                 j++;
             }
+            start++;
         }
+        
         return included;
     }
     
