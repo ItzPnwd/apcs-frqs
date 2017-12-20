@@ -22,14 +22,14 @@ public class HiddenWord
         String result = "";
         for(int i = 0; i < guess.length(); i++)
         {
-            String letter = puzzle.charAt(i);
-            String guessed = guess.charAt(i);
+            String letter = puzzle.substring(i, i+1);
+            String guessed = guess.substring(i, i+1);
             
-            if(guess.charAt(i).equals(puzzle.charAt(i)))
+            if(guessed.equals(letter))
             {
-                result += guess.charAt(i);
+                result += letter;
             }
-            else if(puzzle.charAt(i).indexOf(guess.charAt(i)) != -1)
+            else if(puzzle.indexOf(guessed) != -1)
             {
                 result += "+";
             }
