@@ -2,8 +2,8 @@
 /**
  * Write a description of class SelfDivisor here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version Finished 12/20/17
  */
 public class SelfDivisor
 {
