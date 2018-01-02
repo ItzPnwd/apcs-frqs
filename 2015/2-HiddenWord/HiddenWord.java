@@ -3,7 +3,7 @@
  * Write a description of class HiddenWord here.
  *
  * @author Sean Donlin
- * @version IP:12/12/17
+ * @version Finished:1/2/2018
  */
 public class HiddenWord
 {
@@ -17,6 +17,10 @@ public class HiddenWord
     }
     
     //method(s)
+    /** @param guess  the word or phrased guessed
+     *  @return a String containing the characters * to represent a letter that is not in the string,
+     *  a + to represent the wrong placement of the letter and the letter itself if guessed position is correct.
+     */
     public String getHint(String guess)
     {
         String result = "";
