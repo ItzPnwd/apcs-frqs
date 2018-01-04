@@ -15,6 +15,12 @@ public class Tester
         Phrase phrase4 = new Phrase("aaaa");
         Phrase phrase5 = new Phrase("aaaa");
         
+        System.out.println(phrase1.findNthOccurrence("cat", 1));
+        System.out.println(phrase1.findNthOccurrence("bat", 1));
+        System.out.println(phrase1.findNthOccurrence("at", 1));
+        System.out.println(phrase1.findNthOccurrence("at", 3));
+        System.out.println(phrase1.findNthOccurrence("at", 4));
+        
         phrase1.replaceNthOccurrence("at", 1, "rane");
         phrase2.replaceNthOccurrence("at", 6, "xx");
         phrase3.replaceNthOccurrence("bat", 2, "xx");
@@ -27,8 +33,9 @@ public class Tester
         System.out.println(phrase4);
         System.out.println(phrase5);
         
-        phrase1.findLastOccurrence("at");
-        phrase1.findLastOccurrence("cat");
-        phrase1.findLastOccurrence("bat");
+        //phrase1.findLastOccurrence("at");
+        //phrase1.findLastOccurrence("cat");
+        //phrase1.findLastOccurrence("bat");
+                
     }
 }

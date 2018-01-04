@@ -23,16 +23,21 @@ public class Phrase
      */
     public int findNthOccurrence(String str, int n)
     {
-        int num = 0;
-        int lastIndexOf = 0;
+        int count = 0; // number of times str has been found
+        int loc = currentPhrase.indexOf(str); // last place where str was found
         
-        while(lastIndexOf != -1)
+        while(loc != -1 && count < n)
         {
-            lastIndexOf = currentPhrase.indexOf(str, lastIndexOf);
+            count++;
             
+            if (count == n) {
+                return loc;
+            }
+            
+            loc = currentPhrase.indexOf(str, loc + 1);
         }
         
-        return num;
+        return -1;
     }
     
     /**Modifies the current phrase by replacing the nth occurrence of str with repl.
