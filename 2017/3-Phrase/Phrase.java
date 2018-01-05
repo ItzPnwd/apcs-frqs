@@ -53,7 +53,7 @@ public class Phrase
             String mid = repl;
             String end = currentPhrase.substring(location + str.length());
             
-            String currentPhrase = start + mid + end;
+            currentPhrase = start + mid + end;
         }
     }
     
