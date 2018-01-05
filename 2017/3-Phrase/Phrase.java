@@ -70,6 +70,7 @@ public class Phrase
         while(occurs != -1)
         {
             n++;
+            occurs = findNthOccurrence(str,n);
         }
         if(n > 1)
         {
