@@ -2,12 +2,12 @@ import java.util.ArrayList;
 /**
  * Write a description of class WordList here.
  *
- * @author (your name)
+ * @author Sean Donlin
  * @version (a version number or a date)
  */
 public class WordList
 {
-    private ArrayList myList;
+    private ArrayList<String> myList;
     
     public WordList(ArrayList pullList)
     {
@@ -17,9 +17,9 @@ public class WordList
     public int numWordsOfLength(int len)
     {
         int counter = 0;
-        for(int i = 0; i < myList.size(); i++)
+        for(String i : myList)
         {
-            if(myList.get(i).length() == len)
+            if(i.length() == len)
             {
                 counter++;
             }
@@ -31,11 +31,17 @@ public class WordList
     {
         for(int i = 0; i < myList.size(); i++)
         {
-            if(myList.get(i).length() == len)
+            String word = myList.get(i);
+            if(word.length() == len)
             {
                 myList.remove(i);
                 i-=1;
             }
         }
+    }
+    
+    public toString()
+    {
+        return myList;
     }
 }
