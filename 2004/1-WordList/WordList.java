@@ -40,8 +40,8 @@ public class WordList
         }
     }
     
-    public toString()
+    public String toString()
     {
-        return myList;
+        return myList.toString();
     }
 }
