@@ -3,17 +3,19 @@ import java.util.ArrayList;
  * Write a description of class WordList here.
  *
  * @author Sean Donlin
- * @version (a version number or a date)
+ * @version 2/12/18
  */
 public class WordList
 {
-    private ArrayList<String> myList;
+    private ArrayList<String> myList; //contains Strings made up of letters
     
     public WordList(ArrayList pullList)
     {
         this.myList = pullList;
     }
     
+    //postcondition: returns the number of words in this WordList that
+    //               are exactly len letters long
     public int numWordsOfLength(int len)
     {
         int counter = 0;
@@ -27,6 +29,9 @@ public class WordList
         return counter;
     }
     
+    //postcondition: all words that are exactly len letters long
+    //               have been removed from this WordList, with the
+    //               order of the remaining words unchanged
     public void removeWordsOfLength(int len)
     {
         for(int i = 0; i < myList.size(); i++)
