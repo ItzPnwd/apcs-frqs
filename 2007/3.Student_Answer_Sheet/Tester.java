@@ -9,7 +9,54 @@ public class Tester
 {
     public static void main(String[]arrrrrrrrrrrrrrrrrrrrrrrrggggggggggggggggsssssssssssssssss)
     {
-        ArrayList<String> Answers = new ArrayList<String>();
+        ArrayList<String> Key = new ArrayList<String>();
+        Key.add("A");
+        Key.add("C");
+        Key.add("D");
+        Key.add("E");
+        Key.add("B");
+        Key.add("C");
+        Key.add("E");
+        Key.add("B");
+        Key.add("B");
+        Key.add("C");
+        
+        ArrayList<String> Dave = new ArrayList<String>();
+        Dave.add("A");
+        Dave.add("B");
+        Dave.add("D");
+        Dave.add("E");
+        Dave.add("A");
+        Dave.add("C");
+        Dave.add("?");
+        Dave.add("B");
+        Dave.add("D");
+        Dave.add("C");
+        
+        ArrayList<String> Blake = new ArrayList<String>();
+        Blake.add("A");
+        Blake.add("C");
+        Blake.add("D");
+        Blake.add("E");
+        Blake.add("B");
+        Blake.add("C");
+        Blake.add("E");
+        Blake.add("B");
+        Blake.add("B");
+        Blake.add("C");
+        
+        ArrayList<String> Andrew = new ArrayList<String>();
+        Andrew.add("B");
+        Andrew.add("C");
+        Andrew.add("?");
+        Andrew.add("E");
+        Andrew.add("A");
+        Andrew.add("?");
+        Andrew.add("D");
+        Andrew.add("B");
+        Andrew.add("?");
+        Andrew.add("C");
+        
         
     }
 }
