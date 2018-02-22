@@ -8,14 +8,19 @@ import java.util.ArrayList;
 public class StudentAnswerSheet
 {
     private ArrayList<String> answers;
-    
+    private String name;
+    public StudentAnswerSheet(String name,ArrayList pullList)
+    {
+        this.name = name;
+        this.answers = pullList;
+    }
     
     public double getScore(ArrayList<String> key)
     {
         int correct = 0;
         int wrong = 0;
         
-        for(int i = 0; i <= key.size(); i++)
+        for(int i = 0; i < key.size(); i++)
         {
             if(answers.get(i) == key.get(i))
             {
@@ -31,6 +36,6 @@ public class StudentAnswerSheet
     
     public String getName()
     {
-        return answers.toString();
+        return name;
     }
 }

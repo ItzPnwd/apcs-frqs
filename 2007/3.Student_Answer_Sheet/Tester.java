@@ -57,6 +57,20 @@ public class Tester
         Andrew.add("?");
         Andrew.add("C");
         
+        StudentAnswerSheet AndrewsSheet = new StudentAnswerSheet("Andrew", Andrew);
+        StudentAnswerSheet BlakesSheet = new StudentAnswerSheet("Blake", Blake);
+        StudentAnswerSheet DavesSheet = new StudentAnswerSheet("Dave", Dave);
         
+        ArrayList<StudentAnswerSheet> sheets = new ArrayList<StudentAnswerSheet>();
+        sheets.add(AndrewsSheet);
+        sheets.add(BlakesSheet);
+        sheets.add(DavesSheet);
+        
+        TestResults results = new TestResults(sheets);
+        
+        System.out.println(results.highestScoringStudent(Key));
+        System.out.println(BlakesSheet.getScore(Key));
+        System.out.println(AndrewsSheet.getScore(Key));
+        System.out.println(DavesSheet.getScore(Key));
     }
 }

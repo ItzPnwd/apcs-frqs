@@ -9,12 +9,17 @@ public class TestResults
 {
     private ArrayList<StudentAnswerSheet> Sheets;
     
+    public TestResults(ArrayList pullList)
+    {
+        this.Sheets = pullList;
+    }
+    
     public String highestScoringStudent(ArrayList<String> Key)
     {
         String name = Sheets.get(0).getName();
         Double highScore = Sheets.get(0).getScore(Key);
         
-        for(int i = 1; i <= Sheets.size();i++)
+        for(int i = 1; i < Sheets.size();i++)
         {
             double score = Sheets.get(i).getScore(Key);
             if(score > highScore)
