@@ -2,8 +2,8 @@
 /**
  * Write a description of class BatteryCharger here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version 3/5/18
  */
 public class BatteryCharger
 {
@@ -28,6 +28,17 @@ public class BatteryCharger
     
     public int getChargeStartTime(int chargeTime)
     {
+        int lowestCost = 0;
+        int cost = 0;
+        for(int i = 0; i <= 23; i++)
+        {
+            cost = getChargingCost(i, chargeTime);
+            if(cost > lowestCost)
+            {
+                lowestCost = cost;
+            }
+        }
         
+        return lowestCost;
     }
 }
