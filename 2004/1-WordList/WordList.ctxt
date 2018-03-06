@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=WordList
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ WordList\ here.\r\n\r\n\ @author\ Sean\ Donlin\r\n\ @version\ 2/12/18\r\n
+comment0.text=\r\n\ Uses\ ArrayLists\ to\ create\ a\ list\ of\ words\ that\ will\ now\ in\ turn\ count\r\n\ the\ ammount\ of\ words\ with\ a\ set\ length\ or\ remove\ words\ with\ a\ certain\r\n\ length\r\n\ \r\n\ @author\ Sean\ Donlin\r\n\ @version\ JavaDoc\ Added\ 3/5/18\r\n
 comment1.params=pullList
 comment1.target=WordList(java.util.ArrayList)
 comment2.params=len
