@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=Tester
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Tester\ here.\r\n\r\n\ @author\ Sean\ Donlin\r\n\ @version\ 2/23/18\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Tester\ here.\r\n\r\n\ @author\ Sean\ Donlin\r\n\ @version\ JavaDoc\ Added\ 3/5/18\ ~Still\ needs\ Tester\r\n
 comment1.params=cube\ numTosses
 comment1.target=int[]\ getCubeTosses(NumberCube,\ int)
+comment1.text=\ Returns\ an\ array\ of\ the\ values\ obtained\ by\ tossing\ a\ number\ cube\ numTosses\ times.\r\n\ \ @param\ cube\ a\ NumberCube\r\n\ \ @param\ numTosses\ the\ number\ of\ tosses\ to\ be\ recorded\r\n\ \ \ \ \ \ \ \ \ Precondition\:\ numTosses\ >\ 0\r\n\ \ @return\ an\ array\ of\ numTosses\ values\r\n
 comment2.params=values
 comment2.target=int\ getLongestRun(int[])
+comment2.text=\ Returns\ the\ starting\ index\ of\ a\ longest\ run\ of\ two\ or\ more\ consecutive\ repeated\ values\r\n\ in\ the\ array\ values.\r\n\ @param\ values\ an\ array\ of\ integer\ values\ representing\ a\ series\ of\ number\ cube\ tosses\r\n\ \ \ \ \ \ \ \ Precondition\:\ values.length\ >\ 0\r\n\ @return\ the\ starting\ index\ of\ a\ run\ of\ maximum\ size;\r\n\ \ \ \ \ \ \ \ \ -1\ if\ there\ is\ no\ run\r\n
 comment3.params=args
 comment3.target=void\ main(java.lang.String[])
 numComments=4
