@@ -2,6 +2,7 @@
 dependency1.from=Tester
 dependency1.to=NumberCube
 dependency1.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -16,6 +17,22 @@ package.editor.x=0
 package.editor.y=0
 package.frame.height=728
 package.frame.width=683
+=======
+editor.fx.0.height=1047
+editor.fx.0.width=974
+editor.fx.0.x=1913
+editor.fx.0.y=0
+objectbench.height=137
+objectbench.width=785
+package.divider.horizontal=0.6
+package.divider.vertical=0.8441558441558441
+package.editor.height=773
+package.editor.width=695
+package.editor.x=2006
+package.editor.y=0
+package.frame.height=1024
+package.frame.width=825
+>>>>>>> 881a93052b5faff09c5c8c1ce2a3f983cddf154e
 package.numDependencies=1
 package.numTargets=2
 package.showExtends=true
