@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Tester here.
  *
@@ -15,8 +15,8 @@ public class Tester
         goodies.addOrder(new CookieOrder("Macaroon",2));
         goodies.addOrder(new CookieOrder("Chocolate Chip",3));
         
-        System.out.println(goodies.getTotalBoxes());
+        System.out.println("Total Boxes: " + goodies.getTotalBoxes());
         goodies.removeVariety("Chocolate Chip");
-        System.out.println(goodies.getTotalBoxes());
+        System.out.println("Total Boxes: " + goodies.getTotalBoxes());
     }
 }

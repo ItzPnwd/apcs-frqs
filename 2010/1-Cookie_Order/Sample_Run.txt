@@ -1,0 +1,3 @@
+Total Boxes: 11
+4 boxes of Chocolate Chip removed.
+Total Boxes: 7
