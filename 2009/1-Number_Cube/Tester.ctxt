@@ -1,9 +1,5 @@
 #BlueJ class context
 comment0.target=Tester
-<<<<<<< HEAD
-=======
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Tester\ here.\r\n\r\n\ @author\ Sean\ Donlin\r\n\ @version\ JavaDoc\ Added\ 3/5/18\ ~Still\ needs\ Tester\r\n
->>>>>>> 881a93052b5faff09c5c8c1ce2a3f983cddf154e
 comment1.params=cube\ numTosses
 comment1.target=int[]\ getCubeTosses(NumberCube,\ int)
 comment1.text=\ Returns\ an\ array\ of\ the\ values\ obtained\ by\ tossing\ a\ number\ cube\ numTosses\ times.\r\n\ \ @param\ cube\ a\ NumberCube\r\n\ \ @param\ numTosses\ the\ number\ of\ tosses\ to\ be\ recorded\r\n\ \ \ \ \ \ \ \ \ Precondition\:\ numTosses\ >\ 0\r\n\ \ @return\ an\ array\ of\ numTosses\ values\r\n
