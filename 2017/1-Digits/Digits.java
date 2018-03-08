@@ -11,23 +11,24 @@ public class Digits
     
     public Digits(int num)
     {
+        digitList = new ArrayList<Integer>();
+        
         int remainder = 0;
-        int number = num;
         
         while(num > 0)
         {
-            remainder = number % 10;
+            remainder = num % 10;
             digitList.add(remainder);
-            number = number /10;
+            num = num /10;
         }
     }
     
     public boolean isStrictlyIncreasing()
     {
         boolean increase = true;
-        for(int i = 0; i <= digitList.size(); i++)
+        for(int i = 0; i < digitList.size()-1; i++)
         {
-            if(digitList.get(i) >= digitList.get(i+1))
+            if(digitList.get(i) < digitList.get(i+1))
             {
                 increase = false;
             }
