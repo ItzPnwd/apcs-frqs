@@ -15,6 +15,11 @@ public class Digits
         
         int remainder = 0;
         
+        if(num == 0)
+        {
+            digitList.add(0);
+        }
+        
         while(num > 0)
         {
             remainder = num % 10;
@@ -28,7 +33,7 @@ public class Digits
         boolean increase = true;
         for(int i = 0; i < digitList.size()-1; i++)
         {
-            if(digitList.get(i) < digitList.get(i+1))
+            if(digitList.get(i) <= digitList.get(i+1))
             {
                 increase = false;
             }
