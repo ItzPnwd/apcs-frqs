@@ -1,14 +1,22 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Digits here.
+ * Uses a number, puts into an ArrayList of integers and able to be
+ * tested if it is strictly increasing
  *
  * @author Sean Donlin
- * @version (a version number or a date)
+ * @version JavaDoc Added 3/9/18
  */
 public class Digits
 {
+    /** The list of digits from the number used to construct this object.
+     *  The digits appear in the list in the same order in which they appear in the original number.
+     */
     private ArrayList<Integer> digitList;
     
+    //Constructor(s)
+    /** Constructs a Digit object that represents num.
+     *  Precondition: num >= 0
+     */
     public Digits(int num)
     {
         digitList = new ArrayList<Integer>();
@@ -28,6 +36,9 @@ public class Digits
         }
     }
     
+    /** Returns true if the digits in this Digits object are in strictly increasing order.
+     *          false otherwise.
+     */
     public boolean isStrictlyIncreasing()
     {
         boolean increase = true;

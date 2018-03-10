@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=Digits
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Digits\ here.\r\n\r\n\ @author\ Sean\ Donlin\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Uses\ a\ number,\ puts\ into\ an\ ArrayList\ of\ integers\ and\ able\ to\ be\r\n\ tested\ if\ it\ is\ strictly\ increasing\r\n\r\n\ @author\ Sean\ Donlin\r\n\ @version\ JavaDoc\ Added\ 3/9/18\r\n
 comment1.params=num
 comment1.target=Digits(int)
+comment1.text=\ Constructs\ a\ Digit\ object\ that\ represents\ num.\r\n\ \ Precondition\:\ num\ >\=\ 0\r\n
 comment2.params=
 comment2.target=boolean\ isStrictlyIncreasing()
+comment2.text=\ Returns\ true\ if\ the\ digits\ in\ this\ Digits\ object\ are\ in\ strictly\ increasing\ order.\r\n\ \ \ \ \ \ \ \ \ \ false\ otherwise.\r\n
 numComments=3
