@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Tester here.
+ * Tester classs to tryout the digits class
  *
  * @author Sean Donlin
- * @version (a version number or a date)
+ * @version 3/9/18
  */
 public class Tester
 {

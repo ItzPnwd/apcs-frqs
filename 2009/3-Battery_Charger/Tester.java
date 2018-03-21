@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Tester here.
+ * Tests the BatteryCharger Class
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version 3/9/18
  */
 public class Tester
 {
