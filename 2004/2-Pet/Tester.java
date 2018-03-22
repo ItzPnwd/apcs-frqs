@@ -13,11 +13,13 @@ public class Tester
        Loud_Dog l1 = new Loud_Dog("Bruce");
        Cat c1 = new Cat("Mittens");
        
-       ArrayList<Kennel> r1 = new ArrayList<Kennel>();
-       r1.add(d1);
-       r1.add(l1);
-       r1.add(c1);
+       ArrayList<Pet> pets = new ArrayList<Pet>();
+       pets.add(d1);
+       pets.add(l1);
+       pets.add(c1);
        
-       r1.allSpeak();
+       Kennel astro = new Kennel(pets);
+       
+       astro.allSpeak();
     }
 }

@@ -10,24 +10,23 @@ public class Vehicle extends TaxableItem
     //Field(s)
     private double dealerCost = 0;
     private double dealerMarkup = 0;
-    private double taxRate = 0;
     
     //Constructor(s)
     public Vehicle(double dealerCost, double dealerMarkup,double taxRate)
     {
+        super(taxRate);
         this.dealerCost = dealerCost;
         this.dealerMarkup = dealerMarkup;
-        this.taxRate = taxRate;
     }
     
     //Method(s)
     public double getListPrice()
     {
-        return 
+        return dealerCost + dealerMarkup;
     }
     
     public void changeMarkup(double amount)
     {
-        dealeMarkup = amount;
+        dealerMarkup = amount;
     }
 }

@@ -23,6 +23,6 @@ public abstract class Ticket
     
     private static int getNextSerialNumber()
     {
-        
+        return (int)( 999 * Math.random() + 1);
     }
 }
