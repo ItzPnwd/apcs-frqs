@@ -1,33 +1,24 @@
 
 /**
- * Write a description of class Tester here.
+ * This class test the Abstract class Ticket and classes that extend to it.
  *
- * @author (your name)
+ * @author Sean Donlin
  * @version (a version number or a date)
  */
 public class Tester
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Tester
-     */
-    public Tester()
+    public static void main(String[] arrrrgggsss)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        WalkUp w1 = new WalkUp();
+        Advanced a1 = new Advanced(5);
+        Advanced a2 = new Advanced(10);
+        StudentAdvanced sa1 = new StudentAdvanced(9);
+        StudentAdvanced sa2 = new StudentAdvanced(12);
+        
+        w1.toString();
+        a1.toString();
+        a2.toString();
+        sa1.toString();
+        sa2.toString();
     }
 }

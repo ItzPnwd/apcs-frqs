@@ -8,16 +8,16 @@
 public class Advanced extends Ticket
 {
     private double price = 30.0;
-    private int days;
+    private int date;
     
     public Advanced(int days)
     {
-        this.days = days;
+        this.date = days;
     }
     
     public double getPrice()
     {
-        if(days <= 9)
+        if(date <= 9)
         {
             price = 40.0;
         }        

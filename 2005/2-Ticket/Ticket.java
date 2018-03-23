@@ -18,7 +18,13 @@ public abstract class Ticket
     
     public String toString()
     {
-        return "Number: " + serialNumber + "\nPrice: " + getPrice();
+        if(student)
+        {
+            return "Number: " + serialNumber + "\nPrice: " + getPrice() + "\n(Student ID required)";
+        }
+        else{
+            return "Number: " + serialNumber + "\nPrice: " + getPrice();
+        }
     }
     
     private static int getNextSerialNumber()

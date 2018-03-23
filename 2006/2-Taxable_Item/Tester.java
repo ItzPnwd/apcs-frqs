@@ -7,27 +7,16 @@
  */
 public class Tester
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Tester
-     */
-    public Tester()
+    public static void main(String[] arrrrggggssssss)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        Vehicle carTest = new Vehicle(20000.00, 2500.00, 0.10);
+        Vehicle carNow = new Vehicle(14500, 1500, 0.80);
+        Vehicle carLater = new Vehicle(22000, 2500, 0.80);
+        
+        System.out.println(carTest.purchasePrice());
+        System.out.println(carNow.purchasePrice());
+        System.out.println(carLater.purchasePrice());
+        
+        
     }
 }
