@@ -12,6 +12,10 @@ public class StudentAnswerSheet
     private String name; //the name of the student's answers
     
     //Constructor(s)
+    /**
+     * @param name  name of the students answer sheet
+     * @param pullList  answers on the student's answer sheet
+     */
     public StudentAnswerSheet(String name,ArrayList pullList)
     {
         this.name = name;
