@@ -3,7 +3,7 @@
  * This class test the Abstract class Ticket and classes that extend to it.
  *
  * @author Sean Donlin
- * @version (a version number or a date)
+ * @version 3/23/18
  */
 public class Tester
 {
@@ -22,3 +22,4 @@ public class Tester
         System.out.println(sa2.toString());
     }
 }
+//
