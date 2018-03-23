@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Tester here.
+ * Tester class is a class that tests the classes and abstract 
+ * classes
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version 3/23/18
  */
 public class Tester
 {
@@ -17,6 +18,10 @@ public class Tester
         System.out.println(carNow.purchasePrice());
         System.out.println(carLater.purchasePrice());
         
+        NonTaxableItem item1 = new NonTaxableItem("Creamy Cookies Cake", 25.99);
+        NonTaxableItem item2 = new NonTaxableItem("Buttercream Cupcakes", 10.99);
         
+        System.out.println(item1.purchasePrice());
+        System.out.println(item2.purchasePrice());
     }
 }

@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Tester here.
+ * Test the pet abstract class and the other classes
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version 3/23/18
  */
 public class Tester
 {

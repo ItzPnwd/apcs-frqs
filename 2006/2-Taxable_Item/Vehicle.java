@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Vehicle here.
+ * Vehicle class is set up to find the total dealer cost of any vehicle and
+ * then sends it to TaxableItem to add the tax and recieve the full list Price
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version 3/23/18
  */
 public class Vehicle extends TaxableItem
 {
@@ -11,7 +12,12 @@ public class Vehicle extends TaxableItem
     private double dealerCost = 0;
     private double dealerMarkup = 0;
     
-    //Constructor(s)
+    //Constructor(s
+    /**
+     * @param dealerCost  cost the dealer sets on the vehicle
+     * @param dealerMarkup  cost on the car the dealer wants to add to vehicles cost
+     * @param taxRate  the tax of whichever state your in
+     */
     public Vehicle(double dealerCost, double dealerMarkup,double taxRate)
     {
         super(taxRate);
@@ -20,11 +26,18 @@ public class Vehicle extends TaxableItem
     }
     
     //Method(s)
+    /**
+     * @return the list price without the tax included
+     */
     public double getListPrice()
     {
         return dealerCost + dealerMarkup;
     }
     
+    /**
+     * Changes the dealer markup price
+     * @param amount  the amount you want to change the dealer markup to be
+     */
     public void changeMarkup(double amount)
     {
         dealerMarkup = amount;

@@ -1,17 +1,24 @@
 
 /**
- * Write a description of class Cat here.
+ * The animal cat is represented in this class
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version 3/28/18
  */
 public class Cat extends Pet
 {
+    //Method(s)
+    /**
+     * @param name  sends the name to the pet class
+     */
     public Cat(String name)
     {
         super(name);
     }
     
+    /**
+     * @return returns the sound of a cat
+     */
     public String speak()
     {
         return "MEWO";

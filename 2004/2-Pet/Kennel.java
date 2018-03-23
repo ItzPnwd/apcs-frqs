@@ -1,19 +1,28 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Kennel here.
+ * Allows to print all pets names and noises at once
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version 3/28/18
  */
 public class Kennel
 {
+    //Field(s)
     private ArrayList<Pet> petList;
     
+    //Contructor(s)
+    /**
+     * @param petList  List of all pets in the kennel
+     */
     public Kennel(ArrayList<Pet> petList) 
     {
         this.petList = petList;
     }
     
+    //Method(s)
+    /**
+     * prints all the names and noises of the pets in the kennel
+     */
     public void allSpeak()
     {
         for (Pet p: petList) {

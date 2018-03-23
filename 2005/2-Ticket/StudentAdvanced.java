@@ -16,4 +16,9 @@ public class StudentAdvanced extends Advanced
     {
         return (super.getPrice() / 2);
     }
+    
+    public String toString()
+    {
+        return super.toString() + "\n(Student ID required)";
+    }
 }

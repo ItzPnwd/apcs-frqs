@@ -15,10 +15,10 @@ public class Tester
         StudentAdvanced sa1 = new StudentAdvanced(9);
         StudentAdvanced sa2 = new StudentAdvanced(12);
         
-        w1.toString();
-        a1.toString();
-        a2.toString();
-        sa1.toString();
-        sa2.toString();
+        System.out.println(w1.toString());
+        System.out.println(a1.toString());
+        System.out.println(a2.toString());
+        System.out.println(sa1.toString());
+        System.out.println(sa2.toString());
     }
 }

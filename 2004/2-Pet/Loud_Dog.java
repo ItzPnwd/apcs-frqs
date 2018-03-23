@@ -1,12 +1,16 @@
 
 /**
- * Write a description of class Loud_Dog here.
+ * Class to represent a loud dog
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version 3/28/18
  */
 public class Loud_Dog extends Dog
 {
+   //Method(s)
+   /**
+    * @param name
+    */
    public Loud_Dog(String name)
    {
        super(name);

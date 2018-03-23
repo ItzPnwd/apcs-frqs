@@ -17,14 +17,8 @@ public abstract class Ticket
     public abstract double getPrice();
     
     public String toString()
-    {
-        if(student)
-        {
-            return "Number: " + serialNumber + "\nPrice: " + getPrice() + "\n(Student ID required)";
-        }
-        else{
-            return "Number: " + serialNumber + "\nPrice: " + getPrice();
-        }
+    {    
+        return "Number: " + serialNumber + "\nPrice: " + getPrice();    
     }
     
     private static int getNextSerialNumber()

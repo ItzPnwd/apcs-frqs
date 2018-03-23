@@ -1,9 +1,9 @@
 
 /**
- * Write a description of interface Item here.
+ * It's an interface(what is an interface? I still have no clue only doing the frq)
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sean Donlin
+ * @version 3/23/18
  */
 public interface Item
 {
