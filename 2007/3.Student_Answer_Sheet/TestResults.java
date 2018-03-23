@@ -11,6 +11,9 @@ public class TestResults
     private ArrayList<StudentAnswerSheet> Sheets;
     
     //Constructor(s)
+    /**
+     * @param pullList  answers on students sheet
+     */
     public TestResults(ArrayList pullList)
     {
         this.Sheets = pullList;
