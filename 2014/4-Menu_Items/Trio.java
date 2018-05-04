@@ -22,6 +22,7 @@ public class Trio implements MenuItem
     {
         return sandwich.getName() + " / " + salad.getName() + " / " + drink.getName() + "Trio";
     }
+    
     public double getPrice()
     {
         double p1 = sandwich.getPrice();
